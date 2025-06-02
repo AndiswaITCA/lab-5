@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+    
+</head>
+<body>
+
+   <h3>Volunteer Form</h3>
+   <form action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php" method="POST">
+      <fieldset>
+	    <legend>MyInfo</legend>
+	    <label for="firstname">firstname:</label>
+		<input type="text" id="firstname" placeholder="Name" minlength="6"  maxlength="15" name="first_name_field" required><br>
+
+		<label for="lastname">lastname:</label>
+		<input type="text" id="lastname" placeholder="Surname" minlength="6"  maxlength="15" name="last_name_field" required><br>
+
+		<label for="phone">phone:</label> 
+		<input type="tel" id="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" name="phone_field"><br>
+		  
+		<label for="email">email:</label>
+		<input type="email" id="email" placeholder="NameSurname@gmail.com" name="email_field"><br>
+
+		<label for="title">Gender:</label><br>
+		
+		<label for="Mr.">Male.</label>
+		<input type="radio" id="Mr." value="Mr." name="gender_field">
+		<label for="Ms.">Female.</label>
+		<input type="radio" id="Ms." value="Ms." name="gender_field"><br>
+		  
+		<label for="age">Age:</label><br>
+		<input type="number" id="age" min="0" max="99" value="0" name="age_field"><br>
+	  </fieldset>
+	  
+	  <fieldset>
+	  
+	    <legend>My Availability</legend>
+	  
+	    <h3>Days Available:</h3>
+
+	    <label for="sunday">Sunday:</label>
+	    <input type="checkbox" id="sunday" name="week"><br>
+	  
+	    <label for="monday">Monday:</label>
+	    <input type="checkbox" id="monday" name="week"><br>
+	  
+	    <label for="tuesday">Tuesday:</label>
+	    <input type="checkbox" id="tuesday" name="week"><br>
+	  
+	    <label for="wednesday">Wednesday:</label>
+	    <input type="checkbox" id="wednesday" name="week"><br>
+	  
+	    <label for="thursday">Thursday:</label>
+	    <input type="checkbox" id="thursday" name="week"><br>
+	  
+	    <label for="friday">Friday:</label>
+	    <input type="checkbox" id="friday" name="week"><br>
+	  
+	    <label for="saturday">Saturday:</label>
+	    <input type="checkbox" id="saturday" name="week"><br>
+	  
+	    <h3>Comments</h3>
+
+	    <textarea id="comment" rows="3" cols="25"></textarea><br>
+	  </fieldset>
+	  
+	  <input type="hidden" name="hidden_field" value="Form">
+
+	  <input type="submit" value="Submit Query">
+    
+   </form>
+
+</body>
+</html>
