@@ -26,10 +26,10 @@
 
 		<label for="title">Gender:</label><br>
 		
-		<label for="Mr.">Male.</label>
-		<input type="radio" id="Mr." value="Mr." name="gender_field">
-		<label for="Ms.">Female.</label>
-		<input type="radio" id="Ms." value="Ms." name="gender_field"><br>
+		<label for="male">Male.</label>
+		<input type="radio" id="male" value="Mr." name="gender_field">
+		<label for="female">Female.</label>
+		<input type="radio" id="female" value="Mrs." name="gender_field"><br>
 		  
 		<label for="age">Age:</label><br>
 		<input type="number" id="age" min="0" max="99" value="0" name="age_field"><br>
@@ -42,29 +42,29 @@
 	    <h3>Days Available:</h3>
 
 	    <label for="sunday">Sunday:</label>
-	    <input type="checkbox" id="sunday" name="week"><br>
+	    <input type="checkbox" id="sunday" name="week[]" value="Sunday"><br>
 	  
 	    <label for="monday">Monday:</label>
-	    <input type="checkbox" id="monday" name="week"><br>
+	    <input type="checkbox" id="monday" name="week[]" value="Monday"><br>
 	  
 	    <label for="tuesday">Tuesday:</label>
-	    <input type="checkbox" id="tuesday" name="week"><br>
+	    <input type="checkbox" id="tuesday" name="week[]" value="Tuesday"><br>
 	  
 	    <label for="wednesday">Wednesday:</label>
-	    <input type="checkbox" id="wednesday" name="week"><br>
+	    <input type="checkbox" id="wednesday" name="week[]" value="Wednesday"><br>
 	  
 	    <label for="thursday">Thursday:</label>
-	    <input type="checkbox" id="thursday" name="week"><br>
+	    <input type="checkbox" id="thursday" name="week[]" value="Thursday"><br>
 	  
 	    <label for="friday">Friday:</label>
-	    <input type="checkbox" id="friday" name="week"><br>
+	    <input type="checkbox" id="friday" name="week[]" value="Friday"><br>
 	  
 	    <label for="saturday">Saturday:</label>
-	    <input type="checkbox" id="saturday" name="week"><br>
+	    <input type="checkbox" id="saturday" name="week[]" value="Saturday"><br>
 	  
 	    <h3>Comments</h3>
 
-	    <textarea id="comment" rows="3" cols="25"></textarea><br>
+	    <textarea id="comment" name="comment_field" rows="3" cols="25"></textarea><br>
 	  </fieldset>
 	  
 	  <input type="hidden" name="hidden_field" value="Form">
